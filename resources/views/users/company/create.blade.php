@@ -1,6 +1,7 @@
-@extends('layouts.app1')
+@extends('layouts.app')
 
 @section('content')
+<div class='container'>
     <div class="row">
         <div class="col-md-6 offset-3">
             <form action="{{ url("users/{$user->id}/company-details") }}" method="post">
@@ -10,7 +11,7 @@
             </form>
         </div>
     </div>
-
+</div>
 @append
 
 @section('scripts')

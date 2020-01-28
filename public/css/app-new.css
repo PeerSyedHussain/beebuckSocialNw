@@ -1,50 +1,46 @@
+/**variables declared for color code**/
 .row {
   margin: 0px; }
 
-.sidebar-sticky, .content-section, .dashboard-section, .posted-content {
+.sidebar-sticky, .content-section, .dashboard-section, .posted-content, .edit-section, .group-section {
   background: #fff;
   border-radius: 6px;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.18);
   padding: 15px; }
-  .sidebar-sticky .nav-item, .content-section .nav-item, .dashboard-section .nav-item, .posted-content .nav-item {
+  .sidebar-sticky .nav-item, .content-section .nav-item, .dashboard-section .nav-item, .posted-content .nav-item, .edit-section .nav-item, .group-section .nav-item {
     padding: 0.5rem 0rem; }
-  .sidebar-sticky .post-profile, .content-section .post-profile, .dashboard-section .post-profile, .posted-content .post-profile {
+  .sidebar-sticky .post-profile, .content-section .post-profile, .dashboard-section .post-profile, .posted-content .post-profile, .edit-section .post-profile, .group-section .post-profile {
     width: 55px;
     height: 55px; }
-    .sidebar-sticky .post-profile .post-profile-img, .content-section .post-profile .post-profile-img, .dashboard-section .post-profile .post-profile-img, .posted-content .post-profile .post-profile-img {
+    .sidebar-sticky .post-profile .post-profile-img, .content-section .post-profile .post-profile-img, .dashboard-section .post-profile .post-profile-img, .posted-content .post-profile .post-profile-img, .edit-section .post-profile .post-profile-img, .group-section .post-profile .post-profile-img {
       width: 100%;
       height: 100%; }
-  .sidebar-sticky .textarea, .content-section .textarea, .dashboard-section .textarea, .posted-content .textarea {
+  .sidebar-sticky .textarea, .content-section .textarea, .dashboard-section .textarea, .posted-content .textarea, .edit-section .textarea, .group-section .textarea {
     border: none;
     padding: 10px 10px;
     width: 425px; }
     @media (max-width: 575px) {
-      .sidebar-sticky .textarea, .content-section .textarea, .dashboard-section .textarea, .posted-content .textarea {
+      .sidebar-sticky .textarea, .content-section .textarea, .dashboard-section .textarea, .posted-content .textarea, .edit-section .textarea, .group-section .textarea {
         width: 265px; } }
     @media (max-width: 360px) {
-      .sidebar-sticky .textarea, .content-section .textarea, .dashboard-section .textarea, .posted-content .textarea {
+      .sidebar-sticky .textarea, .content-section .textarea, .dashboard-section .textarea, .posted-content .textarea, .edit-section .textarea, .group-section .textarea {
         width: 210px; } }
-    .sidebar-sticky .textarea .options, .content-section .textarea .options, .dashboard-section .textarea .options, .posted-content .textarea .options {
-      bottom: 5px;
-      right: 10px; }
-      @media (max-width: 992px) {
-        .sidebar-sticky .textarea .options, .content-section .textarea .options, .dashboard-section .textarea .options, .posted-content .textarea .options {
-          justify-content: unset !important; } }
-    .sidebar-sticky .textarea .icon, .content-section .textarea .icon, .dashboard-section .textarea .icon, .posted-content .textarea .icon {
-      margin: 6px;
-      cursor: pointer; }
-    .sidebar-sticky .textarea .to-publish-btn, .content-section .textarea .to-publish-btn, .dashboard-section .textarea .to-publish-btn, .posted-content .textarea .to-publish-btn {
-      background-color: #ffd24a;
-      border-color: #ffb402;
-      color: #fff; }
-      .sidebar-sticky .textarea .to-publish-btn:hover, .content-section .textarea .to-publish-btn:hover, .dashboard-section .textarea .to-publish-btn:hover, .posted-content .textarea .to-publish-btn:hover {
-        background-color: #fff;
-        color: #ffd24a; }
-  .sidebar-sticky .nav-link, .content-section .nav-link, .dashboard-section .nav-link, .posted-content .nav-link {
+  .sidebar-sticky .nav-link, .content-section .nav-link, .dashboard-section .nav-link, .posted-content .nav-link, .edit-section .nav-link, .group-section .nav-link {
     padding: 0; }
-    .sidebar-sticky .nav-link:before, .content-section .nav-link:before, .dashboard-section .nav-link:before, .posted-content .nav-link:before {
+    .sidebar-sticky .nav-link:before, .content-section .nav-link:before, .dashboard-section .nav-link:before, .posted-content .nav-link:before, .edit-section .nav-link:before, .group-section .nav-link:before {
       top: 36px;
       left: 28px; }
+
+.options .icon {
+  margin: 6px;
+  cursor: pointer; }
+.options .to-publish-btn {
+  background-color: #ffd24a;
+  border-color: #ffb402;
+  color: #fff; }
+  .options .to-publish-btn:hover {
+    background-color: #fff;
+    color: #ffd24a; }
 
 @media (max-width: 575px) {
   .content-section {
@@ -65,10 +61,10 @@
   position: fixed;
   width: 200px;
   height: 100%;
-  background: #f39e1f;
+  background: #f1c40f;
   left: -200px;
   transition: all 500ms linear;
-  top: 60px;
+  top: 80px;
   z-index: 10; }
   @media (min-width: 992px) {
     #sidebar {
@@ -88,7 +84,6 @@
     top: 0px; }
     #sidebar .toggle-btn .beelogo {
       width: 30px;
-      margin: 5px 0px;
       position: relative; }
     #sidebar .toggle-btn .hexagon-mobile {
       position: absolute;
@@ -111,8 +106,25 @@
     width: 100%;
     height: 100%;
     border-radius: 50%; }
-  .user-main-profile:hover {
+  .user-main-profile figure {
+    position: relative;
+    border-radius: 50%;
     cursor: pointer; }
+    .user-main-profile figure .to-change-profile-pic {
+      position: absolute;
+      bottom: 20px;
+      left: 40px;
+      background: #f1c40f;
+      padding: 5px;
+      border-radius: 6px;
+      transition: all 0.2s linear;
+      transform: translateY(0%);
+      opacity: 0;
+      visibility: hidden; }
+    .user-main-profile figure:hover .to-change-profile-pic {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(-100%); }
 
 .top-profile-nav {
   margin-top: 25px; }
@@ -158,9 +170,6 @@
       width: 40px;
       opacity: 1;
       visibility: visible; }
-
-.to-change-profile-pic {
-  z-index: -1; }
 
 .notification-box ul {
   padding: 0; }
@@ -215,5 +224,56 @@
   border-radius: 6px; }
   .about-box-section .nav-link:before {
     left: 18px; }
+  .about-box-section .tab-content {
+    background: #fbfbfba3; }
+    .about-box-section .tab-content .tab-pane {
+      padding: 5px 15px; }
+      .about-box-section .tab-content .tab-pane .user-info-box {
+        margin: 10px 0px; }
+        .about-box-section .tab-content .tab-pane .user-info-box .primary-heading {
+          color: #f1c40f; }
+
+.header-logo {
+  width: 50px; }
+  .header-logo img {
+    width: 100%; }
+
+.edit-section .full-width {
+  width: 100%; }
+
+.masonry {
+  /* Masonry container */
+  column-count: 4;
+  column-gap: 1em; }
+  .masonry .item {
+    /* Masonry bricks or child elements */
+    background-color: #eee;
+    display: inline-block;
+    margin: 0 0 1em;
+    width: 100%; }
+    .masonry .item img {
+      width: 100%; }
+
+.group-section .group {
+  border: 1px solid #f1c40f;
+  padding: 10px;
+  margin: 15px 0px;
+  border-radius: 3px;
+  transition: all 0.1s linear;
+  transform: translateY(0%); }
+  .group-section .group:hover {
+    box-shadow: 0px 0px 5px 0px rgba(241, 196, 15, 0.5);
+    transform: translateY(-5%);
+    cursor: pointer; }
+.group-section .group-icon {
+  width: 60px;
+  height: 60px; }
+  .group-section .group-icon .group-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; }
+
+/* Typography section starts  */
+/* Typography section end  */
 
 /*# sourceMappingURL=app-new.css.map */

@@ -10,4 +10,9 @@ class ProfileController extends Controller
     {
         return view("users.profile.index");
     }
+    
+    public function edit()
+    {
+        return view("users.profile.edit");
+    }
 }

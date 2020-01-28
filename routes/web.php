@@ -7,8 +7,9 @@ Route::get('login/google', 'Auth\LoginController@redirectToProvider');
 Route::get('login/facebook', 'Auth\LoginController@redirectToProvider');
 Route::get('login/google/callback', 'Auth\LoginController@handleProviderCallback');
 Route::get('login/facebook/callback', 'Auth\LoginController@handleProviderCallback');
-Route::get('/users/{user}/notification','NotificationController@index');
-Route::get('/users/{user}/about','ProfileController@index');
+Route::get('users/{user}/notification','NotificationController@index');
+Route::get('users/{user}/about','ProfileController@index');
+Route::get('users/{user}/about/edit','ProfileController@edit');
 
 Route::group(['middleware' => 'auth'], function (){
     Route::get('/','Users\\NewsfeedsController@index');
