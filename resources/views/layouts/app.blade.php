@@ -33,11 +33,11 @@
 <div id="app">
     <nav class="navbar navbar-expand-md navbar-light bg-light ">
         <div class='container'>
-            
+
                 <a href='#' class="navbar-brand header-logo">
                     <img src='/img/beebuck-main-logo.png'/>
                 </a>
-            
+
 
             <button type='button'id ='top-nav' class="navbar-toggler" data-toggle='collapse' data-target='#collapse-target'>
                 <span class="navbar-toggler-icon"></span>
@@ -104,14 +104,14 @@
                                 viewBox="0 0 172 172"
                                 style=" fill:#000000;margin-right:5px;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M57.33333,14.33333v14.33333h-7.16667l-50.16667,16.34896v105.48438h172v-121.83333h-57.33333v-14.33333zM7.16667,21.5v14.33333l28.66667,-9.63021v-4.70312zM86,43c23.73958,0 43,19.26042 43,43c0,23.73958 -19.26042,43 -43,43c-23.73958,0 -43,-19.26042 -43,-43c0,-23.73958 19.26042,-43 43,-43zM86,57.33333c-15.84505,0 -28.66667,12.82162 -28.66667,28.66667c0,15.84506 12.82162,28.66667 28.66667,28.66667c15.84506,0 28.66667,-12.82161 28.66667,-28.66667c0,-15.84505 -12.82161,-28.66667 -28.66667,-28.66667z"></path></g></g>
                             </svg>
-                            Edit Profile pic 
+                            Edit Profile pic
                         </div>
                     </form>
                 </figure>
 
             </div>
-           
-            
+
+
         </div>
 
         <div class='col-md-8'>
@@ -127,10 +127,10 @@
                         <a href="/users/1/notification" class='nav-link'>Notification</a>
                     </li> -->
                     <li class="nav-item">
-                        <a href='#' class='nav-link'>Groups</a>
+                        <a href='/users/1/groups' class='nav-link'>Groups</a>
                     </li>
                     <li class="nav-item">
-                        <a href='#' class='nav-link'>Photos</a>
+                        <a href='/users/1/chats' class='nav-link'>Chats</a>
                     </li>
 
                 <button class='btn btn-outline-primary'>
@@ -151,23 +151,22 @@
         <img src='/img/hexagon-mobile.png' class='hexagon-mobile' >
     </div>
     <ul>
-        <a href='#' class='nav-link'><li>NewsFeed</li></a>
-        <a href='#' class='nav-link'><li>Notification</li></a>
+        <a href='#' class='nav-link'><li>Home</li></a>
+        <a href='#' class='nav-link'><li>Profile</li></a>
         <a href='#'class='nav-link'><li>Groups</li></a>
+        <a href='#'class='nav-link'><li>Notifications</li></a>
         <a href='#'class='nav-link'><li>Chats</li></a>
-        <a href='#'class='nav-link'><li>Friends List</li></a>
-        <a href='#'class='nav-link'><li>About</li></a>
     </ul>
 </div>
 
         @yield('left')
 
         @yield('content')
-        <div class='col-sm-3'>
-            <div class="col-md-12 col-lg-12 dashboard-section">
-                <h5 class='heading'>Dashboard</h5>
-            </div>
-        </div>
+{{--        <div class='col-sm-3'>--}}
+{{--            <div class="col-md-12 col-lg-12 dashboard-section">--}}
+{{--                <h5 class='heading'>Dashboard</h5>--}}
+{{--            </div>--}}
+{{--        </div>--}}
     </div>
 </div>
 

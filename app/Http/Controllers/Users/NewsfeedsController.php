@@ -11,7 +11,7 @@ class NewsfeedsController extends Controller
 
     public function index()
     {
-        dd(auth()->user()->posts()->toSql());
+//        dd(auth()->user()->posts()->toSql());
         return view('users.newsfeeds.index');
     }
 

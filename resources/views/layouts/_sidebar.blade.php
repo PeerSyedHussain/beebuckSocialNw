@@ -10,27 +10,27 @@
                 </li>
                 <li>
                     <a href="#layouts">
-                        <i class="iconsmind-Digital-Drawing"></i> NewsFeeds
+                        <i class="iconsmind-Digital-Drawing"></i> Home
                     </a>
                 </li>
                 <li>
                     <a href="#applications">
-                        <i class="iconsmind-Air-Balloon"></i> Friends List
+                        <i class="iconsmind-Air-Balloon"></i>Profile
                     </a>
                 </li>
                 <li>
-                    <a href="#ui">
-                        <i class="iconsmind-Pantone"></i> Chat
+                    <a href="/users/{user}/groups">
+                        <i class="iconsmind-Pantone"></i> Groups
                     </a>
                 </li>
                 <li>
                     <a href="#landingPage">
-                        <i class="iconsmind-Space-Needle"></i> Groups
+                        <i class="iconsmind-Space-Needle"></i> Notifications
                     </a>
                 </li>
                 <li>
                     <a href="#menu">
-                        <i class="iconsmind-Three-ArrowFork"></i> Sub Groups
+                        <i class="iconsmind-Three-ArrowFork"></i> Chats
                     </a>
                 </li>
             </ul>

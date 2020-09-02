@@ -3,14 +3,14 @@
 namespace App\Domains\Users\Models;
 
 use App\Traits\FriendableTemp;
-use App\Traits\HasPost;
+//use App\Traits\HasPost;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
-    use Notifiable, FriendableTemp, HasPost;
+    use Notifiable, FriendableTemp;
 
     protected $guarded = ['id'];
 

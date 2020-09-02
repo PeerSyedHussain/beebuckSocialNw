@@ -10,6 +10,9 @@ Route::get('login/facebook/callback', 'Auth\LoginController@handleProviderCallba
 Route::get('users/{user}/notification','NotificationController@index');
 Route::get('users/{user}/about','ProfileController@index');
 Route::get('users/{user}/about/edit','ProfileController@edit');
+Route::get('users/{user}/groups','GroupsController@index');
+Route::get('users/{user}/chats','ChatsController@index');
+
 
 Route::group(['middleware' => 'auth'], function (){
     Route::get('/','Users\\NewsfeedsController@index');
